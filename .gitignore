@@ -36,5 +36,5 @@ out/
 ### VS Code ###
 .vscode/
 
-# Ignore .DS_Store files in all subdirectories
+### Ignore .DS_Store files in all subdirectories ###
 **/.DS_Store
