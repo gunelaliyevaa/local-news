@@ -1,0 +1,29 @@
+server:
+  servlet:
+    context-path: /local-news
+
+spring:
+
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: mysecretpassword
+    url: jdbc:postgresql://localhost:5432/postgres
+
+  jpa:
+    generate-ddl: true
+    open-in-view: false
+    database: postgresql
+    show-sql: true
+
+    properties:
+      hibernate:
+        format_sql: true
+        default_schema: public
+    hibernate:
+      ddl-auto: create-drop
+
+springdoc:
+  swagger-ui:
+    path: /ui
+
